@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:flutterchallange/models/sport_model.dart';
+import 'package:flutterchallange/models/team_model.dart';
 import 'package:http/http.dart' as http;
 
 class SportService {
