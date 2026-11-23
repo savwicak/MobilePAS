@@ -1,8 +1,9 @@
 import 'package:flutterchallange/core/mainmenu.dart';
-import 'package:flutterchallange/presentation/pages/feat_screen.dart';
-import 'package:flutterchallange/presentation/pages/home_screen.dart';
-import 'package:flutterchallange/presentation/pages/login_screen.dart';
-import 'package:flutterchallange/presentation/pages/profile_screen.dart';
+import 'package:flutterchallange/presentation/screens/detail-screen/transaction_screen.dart';
+import 'package:flutterchallange/presentation/screens/menus/feat_screen.dart';
+import 'package:flutterchallange/presentation/screens/menus/home_screen.dart';
+import 'package:flutterchallange/presentation/screens/menus/login_screen.dart';
+import 'package:flutterchallange/presentation/screens/menus/profile_screen.dart';
 import 'package:get/get.dart';
 
 class Routes {
@@ -13,6 +14,9 @@ class Routes {
   static const String home = '/home';
   static const String feat = '/feat';
   static const String profile = '/Profile';
+
+  static const String transaction = '/transaction';
+
 
   static final pages = [
     GetPage(
@@ -34,6 +38,10 @@ class Routes {
     GetPage(
       name: profile, 
       page: ()=> ProfileScreen()
+    ),
+    GetPage(
+      name: transaction, 
+      page: ()=> TransactionScreen()
     ),
   ];
 }
