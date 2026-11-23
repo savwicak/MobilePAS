@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutterchallange/presentation/pages/feat_screen.dart';
-import 'package:flutterchallange/presentation/pages/home_screen.dart';
-import 'package:flutterchallange/presentation/pages/profile_screen.dart';
+import 'package:flutterchallange/presentation/screens/menus/feat_screen.dart';
+import 'package:flutterchallange/presentation/screens/menus/home_screen.dart';
+import 'package:flutterchallange/presentation/screens/menus/profile_screen.dart';
 import 'package:get/get.dart';
 
 class MainmenuController extends GetxController {
@@ -13,7 +13,7 @@ class MainmenuController extends GetxController {
 
   List<Widget> listPages = [
       HomeScreen(),
-      FeatScreen(),
+      // FeatScreen(),
       ProfileScreen(),
     ];
 }

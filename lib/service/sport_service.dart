@@ -3,16 +3,13 @@ import 'package:flutterchallange/models/sport_model.dart';
 import 'package:http/http.dart' as http;
 
 class SportService {
-  Future<PremierLeagueModel> fetchAsteroids({
-    required String startDate,
-    required String endDate,
-  }) async {
+  Future<PremierLeagueModel> fetchSports() async {
 
     final url = Uri.https(
       'thesportsdb.com',
       '/api/v1/json/123/search_all_teams.php? l=English%20Premier%20League',
     );
-    
+
     final response = await http.get(url);
 
     if(response.statusCode == 200 ){

@@ -12,10 +12,12 @@ class PremierLeagueModel {
   });
 factory PremierLeagueModel.fromJson(Map<String, dynamic> json) =>
   PremierLeagueModel(
-    teams: List<Team>.from(json["teams"].map((x) => Team.fromJson(x))),);
-    Map<String, dynamic> toJson() => {
-    "teams": List<dynamic>.from(teams.map((x) => x.toJson())),
-    };
+      teams: List<Team>.from(json["teams"].map((x) => Team.fromJson(x))),
+    );
+
+      Map<String, dynamic> toJson() => {
+        "teams": List<dynamic>.from(teams.map((x) => x.toJson())),
+      };
   }
 
   class Team {

@@ -31,10 +31,10 @@ class Routes {
       name: home, 
       page: ()=> HomeScreen()
     ),
-    GetPage(
-      name: feat, 
-      page: ()=> FeatScreen()
-    ),
+    // GetPage(
+    //   name: feat, 
+    //   page: ()=> FeatScreen()
+    // ),
     GetPage(
       name: profile, 
       page: ()=> ProfileScreen()
